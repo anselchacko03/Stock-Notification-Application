@@ -7,7 +7,8 @@ import time
 
 #Make the program work continuously
 
-api_key = '65CVB0ENIXNFZIEX'
+#This api key is invalid
+api_key = '10101001010101'
 
 
 def email_alert(subject, body, to):
@@ -16,9 +17,12 @@ def email_alert(subject, body, to):
   message['subject'] = subject
   message['to'] = to
   
-  username = 'achacko10nba@gmail.com'
+  #this email is not mine/doesn't exist
+  username = 'sender@gmail.com'
   message['from'] = username
-  password = 'ykoewncjpaqxgjkr'
+  
+  #this is password is not correct/valid
+  password = 'abcdefghijk'
   
   server = smtplib.SMTP('smtp.gmail.com', 587)
   server.starttls()
@@ -47,5 +51,6 @@ closing_data = data['1. open']
 last_close = closing_data[0]
 
 if last_close > float(notification_price):
-  email_alert(ticker + ' ALERT', ticker + ' has hit ' + notification_price, '22chackoa@abschools.org')
+  #The receivers email is not mine/doesn't exist
+  email_alert(ticker + ' ALERT', ticker + ' has hit ' + notification_price, 'receiver@gmail.com')
     
