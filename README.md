@@ -1,1 +1,2 @@
-# project-1
+# Stock Notification Application
+
