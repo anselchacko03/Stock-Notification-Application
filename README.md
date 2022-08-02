@@ -1,4 +1,4 @@
-# Stock Notification Application
+# Stock Notification Script
 
 Hey! I made this stock notification application to help me track stock prices.
 
